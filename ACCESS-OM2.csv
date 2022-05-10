@@ -1,0 +1,25 @@
+﻿Name of experiment,Description,Status
+025deg_jra55_ryf_nostress,"Ryan's configuration experiment - we use the switch zero_surface_stress_except_BL = True to zero surface wind stress contribution in the momentum equations. However, we found that the zero winds was somehow propagated to mixing layer depth formulation too.",Deleting
+025deg_jra55_ryf_nostress_cont,Ryan's configuration experiment - we use the switch zero_surface_stress_except_BL = False. Typical control run.,Deleting
+025deg_jra55_ryf_nostress_param_kpp,"A no wind stress experiment with resolved shear parameterisation to make the KPP formulation ""feel"" the effect of winds.",Archiving
+025deg_jra55_ryf_param_kpp3,"The successful control experiment (hence the name 3, representing the number of attempts) where we were able to get the best resolved shear formulation for KPP depth estimation. This is used in all future experiments as our control experiment. Here, the switch dVsq_param is set to True in ocean_vert_kpp_mom4p1 namelist. The default coefficient list is listed in input.nml.",Archiving
+025deg_jra55_ryf_param_kpp_extended2,An extension of 025deg_jra55_ryf_param_kpp3 experiment which outputs high frequency (3 hourly) forcing for MOM5 experiments. The simulation begins at year 100 of 025deg_jra55_ryf_param_kpp3.,Archiving
+025deg_jra55_ryf_stress_NH,A perturbation experiment where winds are only present in Northern Hemisphere.,Deleting after proper outputs
+025deg_jra55_ryf_stress_SH,A perturbation experiment where winds are only present in Southern Hemisphere.,Deleting after proper outputs
+025deg_jra55_ryf_vary_rlds20_SAT3.75,A perturbation experiment where we vary the longwave radiation by +20W/m2 and also vary the SAT by 3.75 degrees (the numbers are inspired from Maurice's perturbation experiments) to understand the effect of heat on ocean gyres. These experiments weren't successful as the longwave radiation gradually returend back to their original position.,Deleting
+1deg_jra55_ryf_control,"Ryan's configuration experiment - we use the switch zero_surface_stress_except_BL = False. Typical control run, but at 1 degree resolution. Also, we don't have any resolved shear parameterisation for boundary layer depth.",Deleting
+1deg_jra55_ryf_param_KPP_extended ,An extension of 1deg_jra55_ryf_param_KPP experiment.,Archiving
+1deg_jra55_ryf_stress_except_NANP,A perturbation experiment where we remove all wind stress in the latitude range 10-50 degree N across all latitudes. ,Deleting
+1deg_jra55_ryf_vary_KPP,"A perturbation experiment where we vary the resolved shear parameterisation coefficients to a = 180 (from 80), b = 1.5 (from 1), and c = -0.008 (from -0.01).",Deleting
+1deg_jra55_ryf_vary_rlds20_SAT3.75 ,"A perturbation experiment where we increase longwave radiation by 20 W/m2 everywhere across the globe, and also increase the surface air temperature (SAT) by 3.75 degrees Celsius.",Deleting
+1deg_jra55_ryf_vary_rlds80,A perturbation experiment where we increase longwave radiation by 80 W/m2 everywhere across the globe.,Deleting
+1deg_jra55_ryf_nostress,"A no-stress experiment with dVsq parameterisation, so a no-stress counterpart of 1deg_jra55_ryf_param_KPP.",Archiving
+1deg_jra55_ryf_param_KPP_extended_3hourly,An extension of 1deg_jra55_ryf_param_KPP experiment which outputs high frequency (3 hourly) forcing for MOM5 experiments. The simulation begins at year 100 of 025deg_jra55_ryf_param_KPP.,Archiving
+1deg_jra55_ryf_stress_Pacific,A perturbation experiment where we have winds only in the Northern Pacific ocean.,Deleting
+1deg_jra55_ryf_vary_rlds,"A perturbation experiment where we increase longwave radiation by 20 W/m2 using a cosine wave, with heat gain at the equator and heat loss at the poles.",Deleting
+1deg_jra55_ryf_vary_rlds50,"A perturbation experiment where we increase longwave radiation by 50 W/m2 using a cosine wave, with heat gain at the equator and heat loss at the poles.",Deleting
+1deg_jra55_ryf_param_KPP           ,"A 1 degree counterpart of 025deg_jra55_ryf_param_kpp3,  where we were able to get the best resolved shear formulation for KPP depth estimation. This is used in all future experiments as our control experiment. Here, the switch dVsq_param is set to True in ocean_vert_kpp_mom4p1 namelist. The default coefficient list is listed in input.nml.",Archiving
+1deg_jra55_ryf_stress_eq_except_NANP,A perturbation experiment where we remove all wind stress in the latitude range 10-50 degree N across all latitudes. ,Deleting
+1deg_jra55_ryf_stress_SH,A perturbation experiment where we have winds only in Southern Hemisphere.,Deleting
+1deg_jra55_ryf_vary_rlds10.64_SAT2,"A perturbation experiment where we increase longwave radiation by 10.64 W/m2 using a cosine wave, with heat gain at the equator and heat loss at the poles, and also increase the surface air temperature (SAT) by 2 degrees Celsius.",Deleting
+ 1deg_jra55_ryf_vary_rlds5.32_SAT1,"A perturbation experiment where we increase longwave radiation by 5.32 W/m2 using a cosine wave, with heat gain at the equator and heat loss at the poles, and also increase the surface air temperature (SAT) by 1 degrees Celsius.",Deleting
